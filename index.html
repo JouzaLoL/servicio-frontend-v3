@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Servicio</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- JQuery Modal -->
+    <script src="jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="jquery.modal.css" type="text/css" media="screen" />
+    <!-- JS Cookie -->
+    <script src="js.cookie.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <div id="navigation" class="w3-bar eb-blue">
+            <span href="#nspanvigation" class="w3-bar-item w3-text-white logo">Servicio</span>
+            <div id="account" class="w3-right w3-text-white">
+                <span class="w3-bar-item" id="name"></span>
+                <a href="" id="refresh" class="w3-bar-item">Obnovit</a>
+                <a href="" id="logout" class="w3-bar-item">Odhlásit se</a>
+            </div>
+        </div>
+        <div id="body">
+            <div id="cars" class="w3-container" style="overflow-x:auto;">
+                <h2>Garáž</h2>
+                <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable" id="cars">
+                    <tr class="w3-text-white eb-blue">
+                        <th>Model</th>
+                        <th>SPZ</th>
+                        <th>VIN</th>
+                        <th>Rok</th>
+                        <th>Záznamy</th>
+                    </tr>
+                </table>
+            </div>
+            <button id="addCar" class="w3-btn w3-margin w3-large">Přidat auto</button>
+        </div>
+    </div>
+
+    <!-- MODALS-->
+
+    <div id="login" style="display:none">
+        <h3>Přihlášení</h3>
+        <form id="login">
+            <label for="email">Email: </label><input type="text" name="email" class="w3-input"> <br>
+            <label for="password">Heslo: </label><input type="password" name="password" class="w3-input"> <br>
+            <input type="button" value="Login" id="login" class="w3-input">
+        </form>
+    </div>
+
+    <div id="addCar" style="display:none">
+        <h3>Přidat auto</h3>
+        <form id="addCar">
+            <label for="SPZ">SPZ: </label><input type="text" name="SPZ" class="w3-input"> <br>
+            <label for="VIN">VIN: </label><input type="text" name="VIN" class="w3-input"> <br>
+            <label for="model">Model: </label><input type="text" name="model" class="w3-input"> <br>
+            <label for="year">Rok: </label><input type="text" name="year" class="w3-input"> <br>
+            <input type="button" value="Add" id="addCar" class="w3-input">
+        </form>
+    </div>
+
+    <div id="editCar" style="display:none">
+        <h3>Upravit auto</h3>
+        <form id="editCar">
+            <label for="SPZ">SPZ: </label><input type="text" name="SPZ" class="w3-input"> <br>
+            <label for="VIN">VIN: </label><input type="text" name="VIN" class="w3-input"> <br>
+            <label for="model">Model: </label><input type="text" name="model" class="w3-input"> <br>
+            <label for="year">Rok: </label><input type="text" name="year" class="w3-input"> <br>
+            <input type="button" value="Edit" id="editCar" class="w3-input">
+        </form>
+    </div>
+
+    <script src="bundle-main.js"></script>
+
+</body>
+
+</html>

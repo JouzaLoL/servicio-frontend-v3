@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Servicio</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- JQuery Modal -->
+    <script src="jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="jquery.modal.css" type="text/css" media="screen" />
+    <!-- JS Cookie -->
+    <script src="js.cookie.js"></script>
+
+</head>
+
+<body>
+
+    <div>
+        <div id="navigation" class="w3-bar eb-blue">
+            <span href="#nspanvigation" class="w3-bar-item w3-text-white logo">Servicio</span>
+            <div id="account" class="w3-right w3-text-white">
+                <span class="w3-bar-item" id="name"></span>
+                <a href="" id="refresh" class="w3-bar-item">Obnovit</a>
+                <a href="" id="logout" class="w3-bar-item">Odhlásit se</a>
+            </div>
+        </div>
+        <div id="body">
+            <div id="services" class="w3-container" style="overflow-x:auto;">
+                <h2>Záznamy</h2>
+                <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable" id="services">
+                    <tr class="w3-text-white eb-blue">
+                        <th>Model</th>
+                        <th>SPZ</th>
+                        <th>VIN</th>
+                        <th>Datum</th>
+                        <th>Servis</th>
+                        <th>Mechanik</th>
+                        <th>Cena</th>
+                        <th>Popis</th>
+                        <th>Účtenka</th>
+                    </tr>
+                </table>
+            </div>
+            <button id="addService" class="w3-btn w3-margin w3-large">Přidat záznam</button>
+        </div>
+    </div>
+
+    <!-- MODALS-->
+
+    <div id="login" style="display:none">
+        <h3>Přihlášení</h3>
+        <form id="login">
+            <label for="email">Email: </label><input type="text" name="email" class="w3-input"> <br>
+            <label for="password">Heslo: </label><input type="password" name="password" class="w3-input"> <br>
+            <input type="button" value="Login" id="login" class="w3-input">
+        </form>
+        <span><a href="" id="register">Nemáte účet? Registrujte se</a></span>
+    </div>
+
+    <div id="register" style="display:none">
+        <h3>Registrace</h3>
+        <form id="register">
+            <label for="name">Jméno: </label><input type="text" name="name" class="w3-input"> <br>
+            <label for="email">Email: </label><input type="text" name="email" class="w3-input"> <br>
+            <label for="password">Heslo: </label><input type="password" name="password" class="w3-input"> <br>
+            <input type="button" value="Registrovat" id="register" class="w3-input">
+        </form>
+    </div>
+
+    <div id="addService" style="display:none">
+        <h3>Přidat záznam</h3>
+        <form id="addService">
+            <label for="SPZ">SPZ auta</label><input type="text" name="SPZ" class="w3-input"> <br>
+            <label for="mechanicName">Jméno mechanika</label><input type="text" name="mechanicName" class="w3-input"> <br>
+            <label for="date">Datum: </label><input type="date" name="date" class="w3-input" id="date"> <br>
+            <label for="cost">Cena: </label><input type="number" name="cost" class="w3-input"> <br>
+            <label for="description">Popis: </label><input type="text" name="description" class="w3-input"><br>
+            <label for="file">Účtenka: </label><input type="file" accept="image/*" id="file" multiple="false" name="receipt"
+                class="w3-input"><br>
+            <input type="button" value="Add" id="addService" class="w3-input">
+        </form>
+    </div>
+
+    <script src="bundle-vendor.js"></script>
+</body>
+
+</html>
