@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: "SPZ";
-    src: url(spz.ttf) format("truetype");
+    src: url(../fonts/spz.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "VIN";
-    src: url(vin.ttf) format("truetype");
+    src: url(../fonts/vin.ttf) format("truetype");
 }
 
 .w3-monospace {
@@ -30,7 +30,8 @@ tr td {
 }
 
 .modal {
-  max-width: 80% !important;
+  width: 400px !important;
+  min-width: 300px;
 }
 
 .eb-blue {
@@ -71,9 +72,10 @@ th {
 
 .car_vin {
   font-family: 'VIN';
+  font-size: large;
 }
 
-button {
+button, .w3-btn {
     background-color: #2f3980 !important;
     color: white !important;
 }

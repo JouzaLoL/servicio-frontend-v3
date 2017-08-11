@@ -1,0 +1,1 @@
+console.error("Error: Cannot find module 'C:\\Users\\vacek\\OneDrive\\Programovani\\servicio-frontend-v3\\vendor.js' from 'C:\\Users\\vacek\\OneDrive\\Programovani\\servicio-frontend-v3'");
